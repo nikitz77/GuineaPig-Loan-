@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".MPay">
+
+    <EditText
+        android:id="@+id/principal_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/principal"
+        android:inputType="numberDecimal"
+        android:textEditSuggestionItemLayout="@id/principal_editText" />
+
+    <EditText
+        android:id="@+id/intrate_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/principal_editText"
+        android:hint="@string/int_rate"
+        android:inputType="numberDecimal"
+        android:textEditSuggestionItemLayout="@id/intrate_editText" />
+
+    <EditText
+        android:id="@+id/payPd_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/intrate_editText"
+        android:hint="@string/payPd"
+        android:inputType="number"
+        android:textEditSuggestionItemLayout="@id/payPd_editText" />
+
+    <Button
+        android:id="@+id/calc_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/payPd_editText"
+        android:background="?attr/colorAccent"
+        android:gravity="left|center_vertical"
+        android:text="Calculate monthly payment"
+        android:textAlignment="gravity" />
+
+    <Button
+        android:id="@+id/return_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calc_btn"
+        android:text="@string/return_btn"
+        android:textAlignment="center"
+        android:onClick="Return" />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GuineaPig Loan</string>
+    <string name="Tpay">Calculate time needed to pay.</string>
+    <string name="Mpay">Calculate monthly payment.</string>
+    <string name="promptString">What would you like to calculate?</string>
+    <string name="principal">Enter principal amount</string>
+    <string name="int_rate">Enter interest rate</string>
+    <string name="payPd">Enter desired number of pay periods</string>
+    <string name="return_btn">Return to Main Screen</string>
+</resources>
